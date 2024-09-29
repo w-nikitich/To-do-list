@@ -1,0 +1,18 @@
+@import '../../assets/scss/_variables.scss';
+
+.modal {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    padding: 40px;
+    width: 25vw;
+    background-color: $alice-blue;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+
+    &__description, &__status {
+        margin-top: 20px!important;
+    }
+}

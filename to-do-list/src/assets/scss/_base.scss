@@ -1,0 +1,41 @@
+@import './_variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.hidden {
+    display: none!important;
+}
+
+.close {
+    cursor: pointer;
+
+    &:before, &:after {
+        top: 10px;
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 20px;
+        background-color: $dark-grey;
+    }
+
+    &:before {
+        right: 20px;
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        right: 20px;
+        transform: rotate(-45deg);
+    }
+}
+
+.darken {
+    opacity: .1;
+}

@@ -1,0 +1,19 @@
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  &__date {
+    .input:first-child {
+      margin-right: 15px;
+    }
+  }
+}
+
+@media (max-width: 810px) {
+  .filters {
+    &__date {
+      display: flex;
+    }
+  }
+}

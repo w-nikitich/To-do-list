@@ -1,0 +1,48 @@
+@import '../../assets/scss/_variables.scss';
+
+.task-list {
+    &__title-block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__mark {
+        border-radius: 100%;
+        padding: 10px;
+        margin-right: 20px;
+    }
+
+    &__mark.to-do {
+        background-color: $blue;    
+    }
+
+    &__mark.in-progress {
+        background-color: $yellow; 
+    }
+
+    &__mark.completed {
+        background-color: $green; 
+    }
+
+    &__title {
+        text-transform: capitalize;
+        font-size: $medium-fsize;
+        font-weight: $medium-weight;
+    }
+
+    &__list {
+        background-color: $alice-blue;
+        border-radius: 10px;
+        padding: 20px;
+        width: 20vw;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .task-list {
+        &__list {
+            width: 25vw;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@import "../../../assets/scss/_variables.scss";
+
+.input {
+  position: relative;
+  display: inline-block;
+
+  &__field {
+    display: block;
+    color: $dark-grey;
+    padding: 10px 0 10px 20px;
+    border: 3px solid $azureish-white;
+    border-radius: 10px;
+    font-size: $default-fsize;
+    outline: none;
+
+    &::placeholder {
+      color: $dark-grey;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 810px) {
+  .input {
+    &__field {
+      width: 20vw;
+    }
+  }
+}

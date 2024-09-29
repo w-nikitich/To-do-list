@@ -1,0 +1,81 @@
+@import "../../../assets/scss/_variables.scss";
+
+.btn {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.75s;
+
+  &.sm {
+    background-color: $yankees-blue;
+    padding: 10px 20px;
+    color: $white;
+
+    &:hover {
+      box-shadow: 0 0 0 5px $yankees-blue;
+      background: none;
+      color: $yankees-blue;
+
+      .btn__icon--sm {
+        transition: 0.75s;
+        filter: brightness(0);
+      }
+    }
+  }
+
+  &.lg {
+    background-color: inherit;
+    border: 2px dashed $dark-grey;
+    padding: 20px;
+    color: $black;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  &.create, &.update, &.cancel {
+    display: flex;
+    justify-content: center;
+    background-color: $yankees-blue;
+    border-radius: 10px;
+    padding: 10px;
+    color: $white;
+    font-weight: $medium-weight;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  &.cancel {
+    display: inline-block;
+    background-color: $dark-grey;
+    margin-left: 10px;
+  }
+
+  &__icon--sm,
+  &__icon--lg {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    padding: 5px;
+  }
+
+  &__icon--sm {
+    border: 2px solid $white;
+    margin-right: 10px;
+  }
+
+  &__icon--lg {
+    border: 3px solid $black;
+    filter: brightness(0);
+    margin-right: 20px;
+  }
+
+  &__text--sm {
+    font-size: $default-fsize;
+  }
+
+  &__text--lg {
+    font-size: $medium-fsize;
+    text-transform: capitalize;
+  }
+}
